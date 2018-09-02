@@ -1,0 +1,33 @@
+.outline {
+    margin: 10px;
+    border-style: solid;
+    border-color: lightgrey;
+    padding: 20px;
+}
+
+.thumbnail {
+    height: 120px;
+    width: 120px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+h2, p {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+h1, h2 {
+    text-align: left;
+}
+.icon {
+    height: 45%;
+    width: 45%;
+}
+
+p {
+    text-align: right;
+}

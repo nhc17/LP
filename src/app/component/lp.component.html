@@ -1,0 +1,36 @@
+<mat-card>
+  <mat-card-content>
+   
+    <form #lpForm="ngForm" (ngSubmit)="addAlbum()" fxLayout="column">
+      <mat-form-field>
+        <input type="text" name="albumName" placeholder="Album Name" ngModel matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+          <input type="text" name="artistName" placeholder="Artist Name" ngModel matInput>
+        </mat-form-field>
+      
+      <mat-slider
+        thumbLabel 
+        [displayWith]="formatLabel"
+        tickInterval="1"
+        min="1"
+        max="10"></mat-slider>
+
+      <mat-form-field>
+          <input type="text" name="coverImage" placeholder="Album Cover Image"  class="thumbnail" fxLayout="center start" ngModel matInput>
+        </mat-form-field>
+
+        <div fxLayoutAlign="space-between">
+        <button type="reset" mat-raised-button color="warn" fxLayoutAlign="space-around center">
+          <mat-icon>clear</mat-icon>Clear
+        </button>
+
+        <button type="submit" mat-raised button color="accent" fxLayoutAlign="space-around center">
+          <mat-icon>control_point</mat-icon>Add
+        </button> 
+      </div>
+    </form>
+ 
+  </mat-card-content>
+</mat-card>

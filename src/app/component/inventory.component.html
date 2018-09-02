@@ -1,0 +1,15 @@
+<div *ngFor="let i of inventory, let n = index" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="30px" class="outline">
+    <img src="/src/assets/lpinventory/ {{ i.image }}" class="thumbnail" fxLayoutAlign="start">
+    <div fxLayout="column" fxLayoutAlign="start" fxFlex="grow">
+    <h1> {{ i.labela }} </h1> 
+    <h2> {{ i.labelb }} </h2>
+  </div>
+ 
+  <div fxLayout="column" fxLayoutAlign="end center" >
+      <img src="/assets/share.jpg" class="icon">
+       <p> {{ i.labelc }} </p>
+  </div>
+  
+ 
+
+  </div>

@@ -1,0 +1,25 @@
+form {
+    margin: 10px;
+    z-index: 1;
+}
+
+mat-form-field {
+    margin: 10px;
+    border-style: solid;
+    border-color: lightgrey;
+    padding: 20px;
+}
+
+mat-slider {
+    width: vw;
+}
+
+.thumbnail {
+    height: 150px;
+    width: 150px;
+}
+
+button {
+    margin: 10px;
+    width: 100px;
+}
